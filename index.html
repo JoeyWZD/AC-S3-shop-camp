@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/scss/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <title>ALPHA SHOP</title>
+</head>
+
+<body>
+  <!-- 導覽列 -->
+  <nav class="nav">
+    <div class="nav__container">
+      <label class="nav__container__lebel" for="nav__container__toggle"></label>
+      <div class="nav__container__logo"></div>
+      <input type="checkbox" class="nav__container__toggle" id="nav__container__toggle" />
+      <div class="nav__container__group">
+        <div class="nav__container__group__lists">
+          <div class="nav__container__group__lists__category">男款</div>
+          <div class="nav__container__group__lists__category">女款</div>
+          <div class="nav__container__group__lists__category">最新消息</div>
+          <div class="nav__container__group__lists__category">聯絡我們</div>
+          <div class="nav__container__group__lists__category">客製商品</div>
+        </div>
+        <div class="nav__container__group__icons">
+          <div class="nav__container__group__icons__item"><img src="/img/search.png" alt=""></div>
+          <div class="nav__container__group__icons__item"><img src="/img/car.png" alt=""></div>
+          <div class="nav__container__group__icons__item"><img src="/img/moon.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- 主體 -->
+  <!-- 結帳區 -->
+  <main class="main">
+    <div class="main__container">
+      <div class="main__header">
+        <div class="main__header__container">
+          <div class="main__header__container__title">結帳</div>
+          <div class="main__header__container__steps">
+            <div class="main__header__container__steps__group ">
+              <div class="main__header__container__steps__group__circle bg-b fz-w"></div>
+              <div class="main__header__container__steps__group__word">寄送地址</div>
+            </div>
+            <div class="main__header__container__steps__group ">
+              <div class="main__header__container__steps__group__circle"></div>
+              <span class="main__header__container__steps__group__line "></span>
+              <div class="main__header__container__steps__group__word">運送方式</div>
+            </div>
+            <div class="main__header__container__steps__group ">
+              <div class="main__header__container__steps__group__circle"></div>
+              <span class="main__header__container__steps__group__line"></span>
+              <div class="main__header__container__steps__group__word">付款設定</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main__wrap">
+        <div class="main__adress part">
+          <div class="main__adress__container">
+            <div class="main__adress__container__title">寄送地址</div>
+            <div class="main__adress__container__form">
+              <div class="main__adress__container__form__gender">
+                <label>稱謂</label>
+                <div class="main__adress__container__form__gender__wrap">
+                  <select name="a-type" id="a-type">
+                    <option value="male">先生</option>
+                    <option value="female">小姐</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="main__adress__container__form__name">
+                <label for="">姓名</label>
+                <input type="text" placeholder="請輸入姓名">
+              </div>
+
+              <div class="main__adress__container__form__phone">
+                <label for="">電話</label>
+                <input type="text" placeholder="請輸入行動電話">
+              </div>
+
+              <div class="main__adress__container__form__email">
+                <label for="">Email</label>
+                <input type="text" placeholder="請輸入電子郵件">
+              </div>
+
+              <div class="main__adress__container__form__country">
+                <label>縣市</label>
+                <div class="main__adress__container__form__country__wrap">
+                  <select name="a-type" id="a-type">
+                    <option value="">請選擇縣市</option>
+                    <option value="male">台北市</option>
+                    <option value="female">新北市</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="main__adress__container__form__adress">
+                <label for="">地址</label>
+                <input type="text" placeholder="請輸入地址">
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="main__ship d-none part">
+          <div class="main__ship__container">
+            <div class="main__ship__container__title">運送方式</div>
+            <div class="main__ship__container__group">
+              <div class="main__ship__container__group__items free">
+                <input name="normal__ship" type="radio" value="normal__ship" class="free-radio free" />
+                <div class="main__ship__container__group__items__words free">
+                  <h5>標準運送</h5>
+                  <p>約3到7個工作天</p>
+                </div>
+                <div class="main__ship__container__group__items__price free-price">免費</div>
+              </div>
+
+              <div class="main__ship__container__group__items dhl">
+                <input name="normal__ship" type="radio" value="normal__ship" class="dhl-radio dhl"/>
+                <div class="main__ship__container__group__items__words dhl">
+                  <h5>DHL 貨運</h5>
+                  <p>48小時</p>
+                </div>
+                <div class="main__ship__container__group__items__price dhl-price">$500</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="main__cost d-none part">
+          <div class="main__cost__container">
+            <div class="main__cost__container__title">付款資訊</div>
+            <div class="main__cost__container__form">
+              <div class="main__cost__container__form__cardName">
+                <label for="">持卡人姓名</label>
+                <input type="text" placeholder="John Doe">
+              </div>
+
+              <div class="main__cost__container__form__cardNums">
+                <label for="">卡號</label>
+                <input type="text" placeholder="1111 2222 3333 4444">
+              </div>
+
+              <div class="main__cost__container__form__cardYear">
+                <label for="">有效期限</label>
+                <input type="text" placeholder="MM/YY">
+              </div>
+
+              <div class="main__cost__container__form__cardCode">
+                <label for="">CVC/CCV</label>
+                <input type="text" placeholder="123">
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="main__backet">
+        <div class="main__backet__container">
+          <div class="main__backet__container__header">購物籃</div>
+          <div class="main__backet__container__item">
+            <div class="main__backet__container__item__img"></div>
+            <div class="main__backet__container__item__info">
+              <div class="main__backet__container__item__info__title">破壞補丁修身牛仔褲</div>
+              <div class="main__backet__container__item__info__count">
+                <button class="main__backet__container__item__info__count__addBtn add">+</button>
+                <div class="main__backet__container__item__info__count__num">1</div>
+                <button class="main__backet__container__item__info__count__reduceBtn reduce">-</button>
+              </div>
+              <div class="main__backet__container__item__info__price">$3999</div>
+            </div>
+          </div>
+
+          <div class="main__backet__container__item1">
+            <div class="main__backet__container__item1__img"></div>
+            <div class="main__backet__container__item1__info">
+              <div class="main__backet__container__item1__info__title">刷色直筒牛仔褲</div>
+              <div class="main__backet__container__item1__info__count">
+                <button class="main__backet__container__item1__info__count__addBtn add">+</button>
+                <div class="main__backet__container__item1__info__count__num">1</div>
+                <button class="main__backet__container__item1__info__count__reduceBtn reduce">-</button>
+              </div>
+              <div class="main__backet__container__item1__info__price">$1299</div>
+            </div>
+          </div>
+
+          <div class="main__backet__container__total">
+            <div class="main__backet__container__total__ship">
+              <div class="main__backet__container__total__ship__word">運費</div>
+              <div class="main__backet__container__total__ship__price">免費</div>
+            </div>
+
+            <div class="main__backet__container__total__note">
+              <div class="main__backet__container__total__note__word">小計</div>
+              <div class="main__backet__container__total__note__price">$5298</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="main__step">
+        <div class="main__step__container">
+          <button class="main__step__container__up up d-none">&larr;&emsp;上一步</button>
+          <button class="main__step__container__down down w-100">下一步&emsp;&rarr;</button>
+        </div>
+      </div>
+
+
+
+    </div>
+  </main>
+
+
+
+
+
+
+  <script src="/app.js"></script>
+</body>
+
+</html>
